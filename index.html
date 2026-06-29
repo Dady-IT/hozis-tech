@@ -1,328 +1,420 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hozis Tech - Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOZIS-TECH | Solutions Numériques & Domotique à Libreville, Gabon</title>
+    <meta name="description"
+        content="HOZIS-TECH propose des services informatiques de pointe au Gabon : développement web, cybersécurité, maintenance de parcs informatiques et domotique pour l'habitat connecté.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="topbar">
-        <span>Libreville, Gabon</span>
-        <span>Support: +241 74 67 32 36 </span>
+    <!-- Custom Cursor (Désactivé automatiquement sur mobile) -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
     </div>
 
-    <div class="nav">
-        <!--<div class="logo">Hozis <span>Tech</span></div>  -->
-         <div align="left">
-             <img src="LOGO.png" width="100px" height="100px">
-         </div>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#zone-libreville">Zone Libreville</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#accueil" class="logo" id="navLogo">
+            <div class="logo-icon"></div>
+            <span class="logo-text">HOZIS-TECH</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#habitat">Habitat Smart</a></li>
+            <li><a href="#portfolio">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </nav>
 
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Votre partenaire <span>IT</span></h1>
-            <p>
-                Hozis Tech accompagne les entreprises et particuliers de Libreville
-                dans la maintenance, la conception, l’infographie et l’assistance
-                informatique au quotidien.
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-background"></div>
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">L'INNOVATION NUMÉRIQUE</h1>
+            <p class="hero-subtitle">Du poste de travail à votre lieu d'habitation</p>
+            <p class="hero-description">
+                Nous sommes votre partenaire digital de confiance au Gabon. De la sécurisation réseau de vos bureaux à la domotique intelligente de votre résidence, nous concevons le futur de vos technologies.
             </p>
-            <div class="hero-badges">
-                <span class="badge">Maintenance</span>
-                <span class="badge">Conception</span>
-                <span class="badge">Infographie</span>
-                <span class="badge">Assistance</span>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Uptime Garanti</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">PC & Systèmes Dépannés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Parcs & Villas Sécurisés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support & Intervention</span>
+                </div>
             </div>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Demander un devis</a>
-                <a href="#services" class="btn btn-outline">Voir nos services</a>
+
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary" id="btnHeroServices">Découvrir nos solutions</a>
+                <a href="#contact" class="btn btn-secondary" id="btnHeroContact">Démarrer un projet</a>
             </div>
         </div>
+    </section>
 
-        <aside class="hero-card">
-            <h2>Hozis Tech • Libreville</h2>
-            <p>
-                Interventions rapides sur site ou à distance, adaptées aux besoins des
-                TPE, PME, structures éducatives et particuliers.
-            </p>
-
-            <div class="hero-grid">
-                <div class="mini-card">
-                    <strong>Support réactif</strong>
-                    <span>Prise en charge rapide de vos pannes et incidents.</span>
-                </div>
-                <div class="mini-card">
-                    <strong>Qualité pro</strong>
-                    <span>Solutions durables, documentées et suivies.</span>
-                </div>
-                <div class="mini-card">
-                    <strong>Libreville & environs</strong>
-                    <span>Déplacement dans les principaux quartiers de la capitale.</span>
-                </div>
-                <div class="mini-card">
-                    <strong>Conseil personnalisé</strong>
-                    <span>Accompagnement pour vos projets digitaux.</span>
+    <!-- À propos Section -->
+    <section class="about" id="apropos">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Votre Partenaire Digital au Gabon</h2>
+                <p>
+                    Basé à Libreville, **HOZIS-TECH** est né avec la vision de démocratiser les technologies de pointe tant pour les entreprises que pour les particuliers. Nous croyons que la transformation numérique ne s'arrête pas aux portes du bureau.
+                </p>
+                <p>
+                    Que vous ayez besoin d'un développement web sur mesure intégrant les systèmes de paiement locaux, d'auditer la cybersécurité de votre réseau d'entreprise, ou d'installer des solutions domotiques intelligentes chez vous, notre équipe d'experts vous accompagne de bout en bout.
+                </p>
+                <a href="#contact" class="btn btn-primary" id="btnAboutContact">En savoir plus</a>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-graphic">
+                    <div class="graphic-ring"></div>
                 </div>
             </div>
-        </aside>
-    </div>
-</header>
+        </div>
+    </section>
 
-<main>
-    <!-- Services -->
-    <section id="services">
-        <h2 class="section-title">Nos services informatiques</h2>
+    <!-- Technologies Section -->
+    <section class="tech-stack" id="technologies">
+        <h2 class="section-title">Technologies & Outils de Pointe</h2>
         <p class="section-subtitle">
-            Hozis Tech propose une offre complète pour couvrir l’ensemble de vos besoins numériques :
-            du poste de travail à votre communication visuelle.
+            Nous combinons les meilleurs outils du marché pour concevoir des systèmes performants, stables et ultra-sécurisés.
+        </p>
+
+        <div class="tech-logos">
+            <div class="tech-logo">
+                <div class="tech-icon">🌐</div>
+                <div class="tech-name">Dev Web / JS</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">🛡️</div>
+                <div class="tech-name">Cybersécurité</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">🔌</div>
+                <div class="tech-name">Domotique</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">☁️</div>
+                <div class="tech-name">Cloud AWS/GCP</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">📡</div>
+                <div class="tech-name">Réseaux WiFi</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">🐍</div>
+                <div class="tech-name">Python</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">💻</div>
+                <div class="tech-name">System Unix/Win</div>
+            </div>
+            <div class="tech-logo">
+                <div class="tech-icon">🤖</div>
+                <div class="tech-name">Intégration IA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Nos Services Premium</h2>
+        <p class="section-subtitle">
+            Des solutions numériques complètes adaptées aux exigences des professionnels et des résidences modernes.
         </p>
 
         <div class="services-grid">
-            <article class="service-card">
-                <div class="service-tag">Maintenance</div>
-                <h3>Maintenance informatique</h3>
-                <p>
-                    Préventive et corrective pour garder votre parc informatique fiable,
-                    sécurisé et performant.
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3 class="service-title">Développement Web & E-Commerce</h3>
+                <p class="service-description">
+                    Création de sites vitrines et plateformes e-commerce à fort trafic avec intégration de solutions de paiement gabonaises et internationales.
                 </p>
-                <ul class="service-list">
-                    <li>Diagnostic et nettoyage de PC</li>
-                    <li>Installation / réinstallation de systèmes</li>
-                    <li>Mise à jour logiciels et sécurité</li>
-                    <li>Configuration réseaux de base</li>
+                <ul class="service-features">
+                    <li>Sites vitrines & corporate modernes</li>
+                    <li>Boutiques e-commerce connectées</li>
+                    <li>Applications Web & Mobiles réactives</li>
+                    <li>SEO & optimisation des performances</li>
                 </ul>
-            </article>
+                <div class="service-price">Dès 250 000 FCFA</div>
+                <a href="#contact" class="btn btn-primary" id="btnService1">Lancer un site</a>
+            </div>
 
-            <article class="service-card">
-                <div class="service-tag">Conception</div>
-                <h3>Conception & solutions</h3>
-                <p>
-                    Mise en place et organisation de vos solutions numériques selon vos objectifs métiers.
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3 class="service-title">Cybersécurité & Réseaux</h3>
+                <p class="service-description">
+                    Audit de vulnérabilités, protection des données d'entreprise et configuration de réseaux locaux et WiFi hautement sécurisés.
                 </p>
-                <ul class="service-list">
-                    <li>Conseil pour l’achat de matériel</li>
-                    <li>Architecture simple de postes et réseau</li>
-                    <li>Installation de logiciels métiers</li>
-                    <li>Organisation des données & sauvegardes</li>
+                <ul class="service-features">
+                    <li>Audits de sécurité et de réseau</li>
+                    <li>Configuration de pare-feux (Firewalls)</li>
+                    <li>Sauvegarde et chiffrement des données</li>
+                    <li>WiFi professionnel sécurisé et cloisonné</li>
                 </ul>
-            </article>
+                <div class="service-price">Dès 150 000 FCFA</div>
+                <a href="#contact" class="btn btn-primary" id="btnService2">Sécuriser mon réseau</a>
+            </div>
 
-            <article class="service-card">
-                <div class="service-tag">Infographie</div>
-                <h3>Infographie & visuels</h3>
-                <p>
-                    Valorisez votre image avec des supports graphiques cohérents et professionnels.
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3 class="service-title">Maintenance & Support IT</h3>
+                <p class="service-description">
+                    Assistance technique, dépannage de PC/serveurs, récupération de données perdues et contrat de maintenance de parcs informatiques.
                 </p>
-                <ul class="service-list">
-                    <li>Création de logos et chartes simples</li>
-                    <li>Affiches, flyers, cartes de visite</li>
-                    <li>Bannières pour les réseaux sociaux</li>
-                    <li>Retouche et mise en page de visuels</li>
+                <ul class="service-features">
+                    <li>Réparation matérielle et logicielle (PC/Mac)</li>
+                    <li>Optimisation des systèmes d'exploitation</li>
+                    <li>Récupération de données sur disques endommagés</li>
+                    <li>Support à distance & assistance d'urgence</li>
                 </ul>
-            </article>
+                <div class="service-price">Dès 30 000 FCFA</div>
+                <a href="#contact" class="btn btn-primary" id="btnService3">Demander un dépannage</a>
+            </div>
 
-            <article class="service-card">
-                <div class="service-tag">Assistance</div>
-                <h3>Assistance & accompagnement</h3>
-                <p>
-                    Un interlocuteur unique pour répondre à vos questions et résoudre vos soucis numériques.
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3 class="service-title">Solutions Domotiques & Cloud</h3>
+                <p class="service-description">
+                    Automatisation de votre lieu d'habitation. Gestion intelligente de la sécurité, de l'éclairage, du climat et sauvegarde cloud de vos données.
                 </p>
-                <ul class="service-list">
-                    <li>Support utilisateur à distance</li>
-                    <li>Aide à la prise en main d’outils</li>
-                    <li>Conseils de bonnes pratiques</li>
-                    <li>Suivi et accompagnement régulier</li>
+                <ul class="service-features">
+                    <li>Contrôle d'accès et vidéosurveillance intelligente</li>
+                    <li>Gestion de l'énergie et des climatisations</li>
+                    <li>Réseaux WiFi Mesh longue portée pour villas</li>
+                    <li>Stockage Cloud partagé & privé</li>
                 </ul>
-            </article>
+                <div class="service-price">Dès 200 000 FCFA</div>
+                <a href="#contact" class="btn btn-primary" id="btnService4">Équiper mon habitat</a>
+            </div>
         </div>
     </section>
 
-    <!-- À propos -->
-    <section id="apropos">
-        <h2 class="section-title">À propos de Hozis Tech</h2>
+    <!-- Smart Home Section -->
+    <section class="domotique-section" id="habitat">
+        <div class="domotique-container">
+            <h2 class="section-title">L'Habitat Connecté & Intelligent</h2>
+            <p class="section-subtitle">
+                Faites entrer votre domicile dans l'ère de la domotique et contrôlez tout du bout des doigts.
+            </p>
+
+            <div class="domotique-grid">
+                <!-- 3D Scene -->
+                <div class="domotique-3d-scene">
+                    <div class="floating-cards">
+                        <div class="floating-card">
+                            🔒 Vidéosurveillance IA
+                        </div>
+                        <div class="floating-card">
+                            📶 WiFi Mesh Villa
+                        </div>
+                        <div class="floating-card">
+                            💡 Éclairage Smart
+                        </div>
+                        <div class="floating-card">
+                            🌡️ Climatisation Connectée
+                        </div>
+                    </div>
+                    <div class="central-logo">HOZIS</div>
+                </div>
+
+                <!-- Info List -->
+                <div>
+                    <h3 style="font-size: 2.2rem; margin-bottom: 2rem; color: #ffffff; font-weight: 800;">
+                        La technologie au service de votre confort
+                    </h3>
+                    <ul class="domotique-list">
+                        <li>
+                            <strong>🔒 Télésurveillance & Sécurité active :</strong> Caméras avec détection intelligente humaine et alertes en temps réel sur votre smartphone.
+                        </li>
+                        <li>
+                            <strong>📶 WiFi Mesh sans coupure :</strong> Une couverture sans fil ultra-rapide dans chaque pièce et au jardin de votre villa à Libreville.
+                        </li>
+                        <li>
+                            <strong>🌡️ Climatisation intelligente :</strong> Programmez et réduisez votre facture d'électricité grâce aux thermostats intelligents connectés.
+                        </li>
+                        <li>
+                            <strong>⚡ Automatisation complète :</strong> Éclairage intelligent, portails automatiques et assistants vocaux configurés sur mesure.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Nos Réalisations</h2>
         <p class="section-subtitle">
-            Basée à Libreville, Hozis Tech est une société de services informatiques
-            dédiée à la proximité, à la pédagogie et à la fiabilité.
+            Aperçu de quelques-uns de nos récents succès auprès des entreprises et résidences gabonaises.
         </p>
 
-        <div class="about">
-            <div>
-                <div class="about-highlight">
-                    Hozis Tech simplifie l’informatique pour que vous puissiez vous concentrer
-                    sur l’essentiel : votre activité.
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-item">
-                        <strong>Proximité</strong>
-                        <span>Interlocuteur local, disponible et accessible pour vos demandes au quotidien.</span>
-                    </div>
-                    <div class="about-item">
-                        <strong>Clarté</strong>
-                        <span>Explications simples, devis détaillés et interventions transparentes.</span>
-                    </div>
-                    <div class="about-item">
-                        <strong>Suivi</strong>
-                        <span>Historique des interventions, recommandations et plan d’amélioration continue.</span>
-                    </div>
-                    <div class="about-item">
-                        <strong>Souplesse</strong>
-                        <span>Prestations à la demande ou sous forme de forfait mensuel.</span>
+        <div class="portfolio-grid">
+            <!-- Projet 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">🏠</div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Domotique & WiFi Mesh Résidentiel</h3>
+                    <p class="portfolio-description">
+                        Couverture WiFi Mesh intégrale et système de sécurité intelligent pour une grande villa de Libreville avec gestion centralisée sur tablette.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Domotique</span>
+                        <span class="portfolio-tag">WiFi Mesh</span>
+                        <span class="portfolio-tag">Caméras IP</span>
                     </div>
                 </div>
             </div>
 
-            <aside class="about-aside">
-                <h3>Pourquoi nous confier votre informatique ?</h3>
-                <p>
-                    Une mauvaise gestion de l’outil informatique peut coûter cher en temps,
-                    en données perdues et en image. Hozis Tech vous aide à éviter ces risques.
-                </p>
-                <ul>
-                    <li>Réduction des pannes et interruptions d’activité</li>
-                    <li>Postes de travail mieux protégés et organisés</li>
-                    <li>Image de marque plus professionnelle</li>
-                    <li>Un seul partenaire pour vos demandes IT</li>
-                </ul>
-                <br><br>
-                 <div class="avis">
-                <div class="icon-Avis">
-                    <img src="avis.png" alt="icon-Avis" width="40" height="40">
-                </div>
-                <div class="note">
-                    <H1> 4.5/10</H1>
-                </div>
-            </div>
-            </aside>
-           
-        </div>
-    </section>
-
-
-    <!-- Zone Libreville & infos -->
-    <section id="zone-libreville">
-        <h2 class="section-title">Interventions à Libreville</h2>
-        <p class="section-subtitle">
-            Nous intervenons principalement sur Libreville et ses environs proches.
-            Contactez-nous pour vérifier la faisabilité pour votre quartier.
-        </p>
-
-        <div class="info-grid">
-            <div class="info-box">
-                <h3>Zone d’intervention</h3>
-                <p>
-                    Interventions sur rendez-vous, avec possibilité d’assistance à distance
-                    pour certains problèmes logiciels.
-                </p>
-                <div class="info-columns">
-                    <div>
-                        <div class="info-label">Quartiers couverts</div>
-                        <p>
-                            Centre-ville, Nzeng-Ayong, Akébé, Owendo, Batterie IV,
-                            et autres zones sur demande.
-                        </p>
-                    </div>
-                    <div>
-                        <div class="info-label">Types de clients</div>
-                        <p>
-                            TPE/PME, boutiques, cabinets, écoles, associations, particuliers
-                            à domicile.
-                        </p>
+            <!-- Projet 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">🛒</div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">E-Commerce avec Paiements Locaux</h3>
+                    <p class="portfolio-description">
+                        Développement d'une boutique en ligne de produits électroniques avec intégration d'API de paiement mobile locales pour une fluidité d'achat totale.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Développement Web</span>
+                        <span class="portfolio-tag">E-Commerce</span>
+                        <span class="portfolio-tag">Paiement Mobile</span>
                     </div>
                 </div>
             </div>
 
-            <div class="info-box">
-                <h3>Infos pratiques</h3>
-                <div class="info-contact">
-                    <span><strong>Téléphone :</strong> +241 74 67 32 36</span>
-                    <span><strong>Email :</strong> contact@hozis-tech.com</span>
-                    <span><strong>Horaires :</strong> Lundi – Samedi, 8h30 – 18h00</span>
-                    <span><strong>Ville :</strong> Libreville, Gabon</span>
+            <!-- Projet 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">🛡️</div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Sécurisation Réseau PME</h3>
+                    <p class="portfolio-description">
+                        Audit complet de la sécurité informatique, installation de pare-feux et cloisonnement réseau pour les bureaux d'une PME locale.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Cybersécurité</span>
+                        <span class="portfolio-tag">Audit Réseau</span>
+                        <span class="portfolio-tag">VPN & Firewalls</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="section-title">Démarrons Votre Projet Numérique</h2>
+            <p class="section-subtitle">
+                Une question, un besoin de dépannage ou un projet de domotique ? Contactez-nous dès aujourd'hui pour obtenir une étude gratuite.
+            </p>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="contact">
-            <div>
-                <h2>Contact & demande de devis</h2>
-                <p>
-                    Décrivez votre besoin (maintenance, conception, infographie, assistance)
-                    et nous reviendrons vers vous avec une proposition adaptée.
-                </p>
-                <p class="contact-note">
-                    Les champs marqués d’une * sont obligatoires. Les informations restent confidentielles
-                    et ne sont utilisées que pour répondre à votre demande.
-                </p>
-            </div>
-
-            <div>
-                <form>
-                    <div>
-                        <label for="nom">Nom / Société *</label>
-                        <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de votre structure" required>
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Adresse Locale</h3>
+                        <p>Libreville, Gabon</p>
                     </div>
-
-                    <div>
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="vous@example.com" required>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:contact@hozis-tech.com" style="color: inherit; text-decoration: none;">contact@hozis-tech.com</a></p>
                     </div>
-
-                    <div>
-                        <label for="telephone">Téléphone *</label>
-                        <input type="tel" id="telephone" name="telephone" placeholder="+241 ..." required>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Téléphone / WhatsApp</h3>
+                        <p>+241 077 12 34 56</p>
                     </div>
+                </div>
 
-                    <div>
-                        <label for="service">Service souhaité *</label>
-                        <input type="text" id="service" name="service" placeholder="Maintenance, conception, infographie, assistance..." required>
-                    </div>
-
-                    <div>
-                        <label for="message">Votre message *</label>
-                        <textarea id="message" name="message" placeholder="Décrivez brièvement votre besoin..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-send">Envoyer la demande</button>
-                </form>
+                <!-- Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre Nom</label>
+                            <input type="text" id="name" class="form-control" placeholder="Ex: Jean-Marc" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="Ex: mail@gabon.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre Message</label>
+                            <textarea id="message" class="form-control" placeholder="Décrivez votre besoin..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnSubmitForm">Envoyer le message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-</main>
 
-<footer>
-    <div class="footer-inner">
-        <span>© <span id="year"></span> Hozis Tech – Services informatiques à Libreville.</span>
-        <span>Maintenance • Conception • Infographie • Assistance</span>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#accueil" class="footer-logo">HOZIS-TECH</a>
+            <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7;">
+                HOZIS-TECH est votre prestataire informatique de référence au Gabon. Nous couvrons l’ensemble de vos besoins numériques : du poste de travail à votre lieu d'habitation.
+            </p>
 
-<script>
-    // Affiche automatiquement l'année en cours dans le footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#habitat">Habitat Smart</a>
+                <a href="#portfolio">Réalisations</a>
+                <a href="#contact">Contact</a>
+            </div>
 
+            <div class="footer-bottom">
+                <p>&copy; 2026 HOZIS-TECH. Innovation sans limites au Gabon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
